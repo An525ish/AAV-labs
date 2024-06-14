@@ -1,9 +1,26 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 
+let router = createBrowserRouter([
+
+  {
+    path: "/auth",
+    lazy: async () => {
+      let Auth = await import("@/pages/Auth")
+      return { Component: Auth.default }
+    },
+  },
+  {
+    path: "/",
+    lazy: async () => {
+      let Home = await import("@/pages/Home")
+      return { Component: Home.default }
+    },
+  },
+]);
+
 function App() {
-  return <div className='bg-primary h-screen text-white-pure font-semibold text-3xl'>
-    Cutover Design
-  </div>
+  return <RouterProvider router={router} />
 }
 export default App
 
