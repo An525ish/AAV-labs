@@ -15,24 +15,24 @@ const sidebarItems = Object.freeze([
         text: 'home',
     },
     {
-        id: 'list',
+        id: 'plan',
         icon: ListIcon,
-        text: 'list',
+        text: 'plan',
     },
     {
-        id: 'stats',
+        id: 'status',
         icon: StatsIcon,
-        text: 'stats',
+        text: 'status',
     },
     {
-        id: 'search',
+        id: 'audit',
         icon: SearchIcon,
-        text: 'search',
+        text: 'audit',
     },
     {
-        id: 'setting',
+        id: 'config',
         icon: SettingsIcon,
-        text: 'setting',
+        text: 'config',
     },
     {
         id: 'notification',

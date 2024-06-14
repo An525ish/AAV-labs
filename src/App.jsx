@@ -25,31 +25,31 @@ let router = createBrowserRouter([
         }
       },
       {
-        path: "list",
+        path: "plan",
         lazy: async () => {
-          let List = await import("@/pages/List")
-          return { Component: List.default }
+          let Plan = await import("@/pages/Plan")
+          return { Component: Plan.default }
         }
       },
       {
-        path: "stats",
+        path: "status",
         lazy: async () => {
-          let Stats = await import("@/pages/Stats")
-          return { Component: Stats.default }
+          let Status = await import("@/pages/Status")
+          return { Component: Status.default }
         }
       },
       {
-        path: "search",
+        path: "audit",
         lazy: async () => {
-          let Search = await import("@/pages/Search")
-          return { Component: Search.default }
+          let Audit = await import("@/pages/Audit")
+          return { Component: Audit.default }
         }
       },
       {
-        path: "setting",
+        path: "config",
         lazy: async () => {
-          let Setting = await import("@/pages/Settings")
-          return { Component: Setting.default }
+          let Configuration = await import("@/pages/Configuration")
+          return { Component: Configuration.default }
         }
       },
       {
