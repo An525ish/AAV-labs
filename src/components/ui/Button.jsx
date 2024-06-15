@@ -8,7 +8,7 @@ const getStyles = (variant, disabledBoolean, disabledCustomStyle) => {
         case 'primary':
             return 'bg-primary text-white-pure rounded-lg';
         case 'secondary':
-            return 'border border-black text-body rounded-3xl';
+            return 'bg-pink/20 text-primary rounded-lg';
         default:
             return '';
     }

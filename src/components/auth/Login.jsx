@@ -20,7 +20,7 @@ const Login = () => {
             console.log(data)
             //   const response = await axios.post('https://your-api-endpoint.com/register', data);
             //   console.log('Registration successful:', response.data);
-            navigate('/')
+            navigate('/home')
         } catch (error) {
             console.error('Error registering user:', error);
             // Handle error (e.g., show error message to the user)
