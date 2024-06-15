@@ -1,12 +1,14 @@
 import { createContext } from "react"
 import SignOutIcon from "../icons/SignOut"
+import { useNavigate } from "react-router-dom"
 
 export const SidebarContext = createContext()
 
 const Sidebar = ({ children }) => {
+    const navigate = useNavigate()
 
     const handleLogout = () => {
-        console.log('first')
+        navigate('/auth')
     }
 
     return (
@@ -15,9 +17,9 @@ const Sidebar = ({ children }) => {
 
                 <ul className="flex-1 mt-28">{children}</ul>
 
-                <div className="relative flex flex-col gap-4 p-3">
+                <div className="relative flex flex-col gap-6 p-3">
                     <SignOutIcon
-                        className={'w-7 inline-block group-hover:fill-red'}
+                        className={'w-7 cursor-pointer inline-block group-hover:fill-red'}
                         onClick={handleLogout}
                     />
 
